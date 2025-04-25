@@ -1,0 +1,3237 @@
+digraph model_graph {
+	graph [K=3,
+		bb="0,0,3517.8,3748.6",
+		fontname=Roboto,
+		fontsize=8,
+		rankdir=TB,
+		sep="+3",
+		splines=true
+	];
+	node [fontname=Roboto,
+		fontsize=8,
+		label="\N",
+		shape=plaintext
+	];
+	edge [fontname=Roboto,
+		fontsize=8
+	];
+	django_softdelete_models_SoftDeleteModel	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    SoftDeleteModel
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">deleted_at</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">restored_at</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">transaction_id</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">UUIDField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="431.76,1551.3",
+		width=2.2674];
+	auth_models_Profile	[height=5.1875,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Profile<BR/>&lt;<FONT FACE="Roboto"><I>SoftDeleteModel</I></FONT>&gt;
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>fakultas</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>institusi</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>program_studi</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>user</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>OneToOneField (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">agama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">bio</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">created_at</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>deleted_at</I></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>DateTimeField</I></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">email</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">EmailField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">email_token</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">forget_password_token</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">foto_profil</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ImageField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">is_verified</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">BooleanField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">jenis_kelamin</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">modified_at</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama_lengkap</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">nama_panggilan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">no_telepon</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>restored_at</I></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>DateTimeField</I></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">tanggal_lahir</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">tempat_lahir</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>transaction_id</I></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><I>UUIDField</I></FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1205.4,1660.7",
+		width=3.1319];
+	auth_models_Profile -> django_softdelete_models_SoftDeleteModel	[arrowhead=empty,
+		arrowtail=none,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" abstract\ninheritance",
+		lp="782.92,1614.3",
+		pos="e,513.3,1562.8 1092.9,1644.8 939.42,1623.1 667.11,1584.6 524.59,1564.4"];
+	apps_general_models_models_Institusi	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Institusi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1812.6,2196.5",
+		width=1.8403];
+	auth_models_Profile -> apps_general_models_models_Institusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" institusi (daftar_profile)",
+		lp="1489.7,1986.4",
+		pos="s,1317.9,1776.4 1324.2,1782.6 1408.1,1866.5 1524.7,1978.8 1634.6,2069.6 1677.2,2104.7 1728.9,2140.9 1765.5,2165.6"];
+	apps_general_models_models_Fakultas	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Fakultas
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="592.92,1294.2",
+		width=1.8403];
+	auth_models_Profile -> apps_general_models_models_Fakultas	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" fakultas (daftar_profile)",
+		lp="825.21,1464.2",
+		pos="s,1092.7,1593.3 1085.2,1588.8 951.2,1508.6 740.63,1382.5 644.22,1324.9"];
+	apps_general_models_models_ProgramStudi	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    ProgramStudi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1703.3,2036.3",
+		width=1.8403];
+	auth_models_Profile -> apps_general_models_models_ProgramStudi	[arrowhead=none,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" program_studi (daftar_profile)",
+		lp="1435,1881",
+		pos="s,1318.1,1745.7 1325.2,1751.1 1434.5,1833.5 1589.8,1950.7 1662.6,2005.6"];
+	apps_general_models_models_PeriodeAkademik	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PeriodeAkademik
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">is_active</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">BooleanField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">semester</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">tahun_akademik_akhir</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">tahun_akademik_awal</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1828.9,2763.7",
+		width=2.684];
+	apps_general_models_models_Berkas	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Berkas
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">file_berkas</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">FileField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="995.6,1760.5",
+		width=2.0903];
+	apps_general_models_models_Person	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Person
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>OneToOneField (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1164.8,2295.7",
+		width=2.309];
+	apps_general_models_models_Person -> auth_models_Profile	[arrowhead=none,
+		arrowtail=none,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" profile (person)",
+		lp="1150.3,2082.2",
+		pos="1167.2,2257.9 1172.3,2178.8 1184.3,1991.3 1193.5,1847.3"];
+	apps_general_models_models_LokasiRuangan	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    LokasiRuangan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2073.5,3316.6",
+		width=1.9306];
+	apps_general_models_models_MataKuliah	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    MataKuliah
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">kode</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1901.3,1573.5",
+		width=1.8403];
+	apps_general_models_models_BidangKeahlian	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    BidangKeahlian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="3077.5,2032.8",
+		width=1.941];
+	apps_general_models_models_Skill	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Skill
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="439.14,270.01",
+		width=1.8403];
+	apps_general_models_models_Alamat	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Alamat
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2600.4,3248.9",
+		width=1.8403];
+	apps_general_models_models_PosisiStruktural	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PosisiStruktural
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="3034.3,1782.2",
+		width=1.9826];
+	apps_general_models_models_OrganisasiAkademik	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    OrganisasiAkademik
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="3043.5,2284",
+		width=2.2743];
+	apps_general_models_models_Organisasi	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Organisasi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="733.53,30.875",
+		width=1.8403];
+	apps_general_models_models_PrestasiAkademik	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PrestasiAkademik
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="959.34,51.942",
+		width=2.1076];
+	apps_general_models_models_PrestasiNonAkademik	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PrestasiNonAkademik
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="294.03,399.35",
+		width=2.3889];
+	apps_general_models_models_Sertifikasi	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Sertifikasi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="246.98,614.9",
+		width=1.8403];
+	apps_general_models_models_Fasilitas	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Fasilitas
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="3451.5,818.67",
+		width=1.8403];
+	apps_general_models_models_Pengalaman	[height=0.85764,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Pengalaman
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="547.49,113.17",
+		width=1.8403];
+	apps_main_models_models_Dosen	[height=3.8785,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Dosen
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>almamater_s1</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>almamater_s2</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>almamater_s3</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>posisi_struktural</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>OneToOneField (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">gelar_akademik_akhiran</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">gelar_akademik_awalan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">google_scholar_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">jabatan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">jenjang_pendidikan_terakhir</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">keahlian_tambahan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">nidn</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">nip</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">personal_website</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">scopus_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">status_dosen</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2409.1,1924",
+		width=3.3611];
+	apps_main_models_models_Dosen -> auth_models_Profile	[arrowhead=none,
+		arrowtail=none,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" profile (dosen)",
+		lp="1786.6,1733.3",
+		pos="2288.2,1877.5 2143.1,1824 1891.3,1737.9 1667.5,1695.6 1549.5,1673.3 1412,1665.1 1317.9,1662.2"];
+	apps_main_models_models_Dosen -> apps_general_models_models_Institusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" almamater_s1 (daftar_dosen_almamater_s1)",
+		lp="2014.4,2147.9",
+		pos="s,2288.3,2013.1 2281.1,2018.3 2206,2072.9 2122.1,2132.5 2101.8,2141.2 2081.6,2149.8 1957.7,2171.8 1878.8,2185.4"];
+	apps_main_models_models_Dosen -> apps_general_models_models_Institusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#7f7f7f",
+		dir=both,
+		fontcolor="#7f7f7f",
+		label=" almamater_s2 (daftar_dosen_almamater_s2)",
+		lp="2010.5,2178.6",
+		pos="s,2288.2,2029.9 2281.4,2035.8 2211,2096.3 2133.8,2160.4 2113.6,2168.8 2092.5,2177.5 1960.7,2187.2 1878.7,2192.5"];
+	apps_main_models_models_Dosen -> apps_general_models_models_Institusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#bcbd22",
+		dir=both,
+		fontcolor="#bcbd22",
+		label=" almamater_s3 (daftar_dosen_almamater_s3)",
+		lp="2012.5,2163.6",
+		pos="s,2288.2,2021.4 2281.1,2026.9 2208.4,2084.5 2127.9,2146.5 2107.7,2155 2087.1,2163.6 1959.2,2179.6 1878.8,2189"];
+	apps_main_models_models_Dosen -> apps_general_models_models_MataKuliah	[arrowhead=dot,
+		arrowtail=dot,
+		color="#ffbb78",
+		dir=both,
+		fontcolor="#ffbb78",
+		label=" daftar_mata_kuliah_yang_diampu (daftar_dosen_pengampu)",
+		lp="2010.9,1731.2",
+		pos="s,2288.1,1840.5 e,1956.4,1611.5 2281,1835.5 2179.4,1765.5 2042,1670.6 1963.4,1616.3"];
+	apps_main_models_models_Dosen -> apps_general_models_models_BidangKeahlian	[arrowhead=dot,
+		arrowtail=dot,
+		color="#aec7e8",
+		dir=both,
+		fontcolor="#aec7e8",
+		label=" daftar_bidang_keahlian (daftar_dosen)",
+		lp="2697.6,1987.8",
+		pos="s,2529.8,1943.6 e,3008,2021.5 2538.5,1945 2675.1,1967.3 2886.1,2001.7 2999.3,2020.1"];
+	apps_main_models_models_Dosen -> apps_general_models_models_PosisiStruktural	[arrowhead=none,
+		arrowtail=dot,
+		color="#17becf",
+		dir=both,
+		fontcolor="#17becf",
+		label=" posisi_struktural (daftar_dosen_yang_menjabat)",
+		lp="2658.2,1852.7",
+		pos="s,2530,1896.6 2538.8,1894.6 2667.6,1865.4 2860.3,1821.7 2963.4,1798.3"];
+	apps_main_models_models_Dosen -> apps_general_models_models_OrganisasiAkademik	[arrowhead=dot,
+		arrowtail=dot,
+		color="#98df8a",
+		dir=both,
+		fontcolor="#98df8a",
+		label=" daftar_organisasi_akademik (daftar_dosen)",
+		lp="2692.2,2135",
+		pos="s,2530,1992.5 e,2989.2,2253.1 2537.7,1996.9 2672.6,2073.5 2879,2190.6 2981.4,2248.7"];
+	apps_main_models_models_Mahasiswa	[height=2.2674,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Mahasiswa
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>cv</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>OneToOneField (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">angkatan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">github_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ipk</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DecimalField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">linkedin_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">npm</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">website_portfolio</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="826.47,642.84",
+		width=2.7986];
+	apps_main_models_models_Mahasiswa -> auth_models_Profile	[arrowhead=none,
+		arrowtail=none,
+		color="#ff9896",
+		dir=both,
+		fontcolor="#ff9896",
+		label=" profile (mahasiswa)",
+		lp="951.83,1081.5",
+		pos="856.85,724.42 917.05,886.11 1052.9,1250.9 1136.1,1474.4"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_Berkas	[arrowhead=none,
+		arrowtail=dot,
+		color="#c5b0d5",
+		dir=both,
+		fontcolor="#c5b0d5",
+		label=" cv (daftar_mahasiswa)",
+		lp="872.34,1228.7",
+		pos="s,838.77,724.12 840.09,732.8 874.9,962.84 966.09,1565.4 989.86,1722.6"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_Skill	[arrowhead=dot,
+		arrowtail=dot,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" daftar_skill_yang_dimiliki (daftar_mahasiswa)",
+		lp="524.82,436.06",
+		pos="s,741.95,561.48 e,470.88,300.56 735.63,555.4 653.52,476.36 536.67,363.89 477.16,306.6"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_Organisasi	[arrowhead=dot,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" daftar_organisasi_yang_diikuti (daftar_mahasiswa)",
+		lp="681.7,302.23",
+		pos="s,814.08,561.26 e,738.19,61.549 812.78,552.64 792.21,417.25 754.22,167.06 739.54,70.414"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_PrestasiAkademik	[arrowhead=dot,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" daftar_prestasi_akademik (daftar_mahasiswa)",
+		lp="813.91,327.06",
+		pos="s,844.81,561.3 e,952.4,82.805 846.77,552.57 876.19,421.74 929.45,184.86 950.47,91.394"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_PrestasiNonAkademik	[arrowhead=dot,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" daftar_prestasi_non_akademik (daftar_mahasiswa)",
+		lp="445.1,516.56",
+		pos="s,726.01,596.9 e,361.18,430.06 718.08,593.27 614.25,545.79 460.29,475.38 369.25,433.75"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_Sertifikasi	[arrowhead=dot,
+		arrowtail=dot,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" daftar_sertifikasi_yang_dimiliki (daftar_mahasiswa)",
+		lp="421.95,633.01",
+		pos="s,725.86,637.99 e,313.07,618.08 717.06,637.56 601.5,631.99 422.43,623.36 321.95,618.51"];
+	apps_main_models_models_Mahasiswa -> apps_general_models_models_Pengalaman	[arrowhead=dot,
+		arrowtail=dot,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" daftar_pengalaman (daftar_mahasiswa)",
+		lp="600.14,357.91",
+		pos="s,783.49,561.24 e,563.63,143.79 779.36,553.39 717.55,436.03 611.77,235.2 567.69,151.52"];
+	apps_main_models_models_LaboratoriumRiset	[height=3.0729,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    LaboratoriumRiset
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>institusi</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>kepala</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>OneToOneField (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">deskripsi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">facebook</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">instagram_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">kode</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">linkedin_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">logo</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ImageField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">twitter_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">website</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">youtube_link</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2300.3,2666.3",
+		width=2.6632];
+	apps_main_models_models_LaboratoriumRiset -> apps_general_models_models_Institusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" institusi (daftar_laboratorium_riset)",
+		lp="1959.4,2405.6",
+		pos="s,2204.6,2574 2198.3,2568 2086.9,2460.7 1915,2295.1 1844.4,2227.2"];
+	apps_main_models_models_LaboratoriumRiset -> apps_general_models_models_LokasiRuangan	[arrowhead=dot,
+		arrowtail=dot,
+		color="#bcbd22",
+		dir=both,
+		fontcolor="#bcbd22",
+		label=" daftar_lokasi_ruangan (daftar_laboratorium_riset)",
+		lp="2074.6,3056.4",
+		pos="s,2261.9,2776.6 e,2084.2,3285.9 2259,2784.8 2207,2933.8 2120.5,3181.9 2087.1,3277.5"];
+	apps_main_models_models_LaboratoriumRiset -> apps_general_models_models_Alamat	[arrowhead=dot,
+		arrowtail=dot,
+		color="#17becf",
+		dir=both,
+		fontcolor="#17becf",
+		label=" daftar_alamat (daftar_laboratorium_riset)",
+		lp="2403.1,3020.4",
+		pos="s,2357.3,2776.9 e,2584.5,3218.1 2361.3,2784.6 2429.5,2917.2 2536.5,3124.8 2580.5,3210.2"];
+	apps_main_models_models_LaboratoriumRiset -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=none,
+		color="#7f7f7f",
+		dir=both,
+		fontcolor="#7f7f7f",
+		label=" kepala (laboratorium_dikepalai)",
+		lp="2294.6,2319.3",
+		pos="2316.5,2556 2335.7,2424.9 2367.8,2206.1 2388.7,2063.4"];
+	apps_main_models_models_RelasiLaboratoriumRisetKeDosen	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    RelasiLaboratoriumRisetKeDosen
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>dosen</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>laboratorium_riset</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">jabatan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2764.7,2582.8",
+		width=3.2118];
+	apps_main_models_models_RelasiLaboratoriumRisetKeDosen -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=dot,
+		color="#ffbb78",
+		dir=both,
+		fontcolor="#ffbb78",
+		label=" dosen (daftar_relasi_laboratorium)",
+		lp="2555.6,2318.7",
+		pos="s,2740.3,2537.6 2736,2529.7 2681.8,2429.3 2562.8,2208.8 2484.4,2063.4"];
+	apps_main_models_models_RelasiLaboratoriumRisetKeDosen -> apps_main_models_models_LaboratoriumRiset	[arrowhead=none,
+		arrowtail=dot,
+		color="#aec7e8",
+		dir=both,
+		fontcolor="#aec7e8",
+		label=" laboratorium_riset (daftar_relasi_dosen)",
+		lp="2559.5,2621.1",
+		pos="s,2649.3,2603.6 2640.6,2605.2 2563.8,2619 2466.7,2636.4 2396,2649.1"];
+	apps_main_models_models_NilaiMataKuliahMahasiswa	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    NilaiMataKuliahMahasiswa
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>mahasiswa</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>mata_kuliah</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nilai</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">DecimalField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1635.8,965.96",
+		width=2.7431];
+	apps_main_models_models_NilaiMataKuliahMahasiswa -> apps_general_models_models_MataKuliah	[arrowhead=none,
+		arrowtail=dot,
+		color="#98df8a",
+		dir=both,
+		fontcolor="#98df8a",
+		label=" mata_kuliah (daftar_nilai_mahasiswa)",
+		lp="1603.4,1316",
+		pos="s,1599.8,1011.1 1595.8,1018.7 1593.3,1023.6 1591.2,1028.7 1589.7,1033.7 1575.3,1080.5 1574.6,1097.3 1589.7,1143.8 1643.6,1310.1 \
+1788.8,1466 1860.3,1535.5"];
+	apps_main_models_models_NilaiMataKuliahMahasiswa -> apps_main_models_models_Mahasiswa	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff9896",
+		dir=both,
+		fontcolor="#ff9896",
+		label=" mahasiswa (daftar_nilai_mata_kuliah)",
+		lp="1163.3,810.11",
+		pos="s,1537.3,926.66 1529,923.35 1372,860.63 1080.6,744.29 927.07,683"];
+	apps_kegiatan_lab_models_Kegiatan	[height=5.2882,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Kegiatan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>dosen_penanggung_jawab</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ketua_panitia</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>laboratorium_riset_penyelenggara</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>lokasi</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>moderator</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>periode_akademik</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">artikel</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">biaya_pendaftaran</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DecimalField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">deskripsi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">format_acara</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">judul_materi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">jumlah_maksimal_peserta</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">PositiveIntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">kategori</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">logo_kegiatan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ImageField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">logo_sponsor</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ImageField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">sponsor_acara</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">subtopik</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">sumber_pendanaan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">tingkatan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">topik_utama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">waktu_mulai</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">waktu_selesai</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1494.5,2647.3",
+		width=3.7778];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_PeriodeAkademik	[arrowhead=none,
+		arrowtail=dot,
+		color="#c5b0d5",
+		dir=both,
+		fontcolor="#c5b0d5",
+		label=" periode_akademik (daftar_kegiatan)",
+		lp="1714.3,2707",
+		pos="s,1630,2694.5 1638.5,2697.4 1670.2,2708.5 1703.1,2719.9 1732.4,2730.1"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_Berkas	[arrowhead=dot,
+		arrowtail=dot,
+		color="#7f7f7f",
+		dir=both,
+		fontcolor="#7f7f7f",
+		label=" daftar_materi (daftar_kegiatan_materi)",
+		lp="1136.7,2131.6",
+		pos="s,1393.9,2457 e,1020.3,1798.3 1389.7,2449.4 1273.9,2239.6 1094.7,1922.6 1024.8,1805.8"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_Berkas	[arrowhead=dot,
+		arrowtail=dot,
+		color="#bcbd22",
+		dir=both,
+		fontcolor="#bcbd22",
+		label=" daftar_dokumentasi (daftar_kegiatan_dokumentasi)",
+		lp="1270.1,2098.4",
+		pos="s,1381,2457.1 e,1013.6,1798.3 1376.6,2449.5 1256.5,2239.9 1079.3,1923.2 1017.7,1806.1"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_Institusi	[arrowhead=dot,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" daftar_institusi_asal_pembicara (daftar_kegiatan_asal_institusi_pembicara)",
+		lp="1846.7,2347.4",
+		pos="s,1628.7,2457.1 e,1790.8,2227.3 1633.8,2449.9 1691.1,2368.6 1752,2282.3 1785.9,2234.4"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_Person	[arrowhead=none,
+		arrowtail=dot,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" moderator (daftar_kegiatan_sebagai_moderator)",
+		lp="1192.5,2407",
+		pos="s,1358.6,2492.6 1352.5,2486.1 1299.7,2429.4 1243.7,2370.8 1206.7,2333.8"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_Person	[arrowhead=dot,
+		arrowtail=dot,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" daftar_pembicara (daftar_kegiatan_sebagai_pembicara)",
+		lp="1166.6,2421.8",
+		pos="s,1358.6,2512.1 e,1194.6,2333.7 1352.6,2505.7 1296.7,2446.6 1237.2,2382.2 1200.5,2340.4"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_general_models_models_LokasiRuangan	[arrowhead=none,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" lokasi (daftar_kegiatan)",
+		lp="1795.1,3050.3",
+		pos="s,1630.2,2804.2 1636,2810.8 1774.7,2971.2 1975.5,3203.3 2047,3286"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" ketua_panitia (daftar_kegiatan_sebagai_ketua_panitia)",
+		lp="1859.7,2292.6",
+		pos="s,1630.1,2546.4 1637.2,2540.9 1816.2,2402.3 2120.2,2161.8 2288.3,2025.6"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=dot,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" dosen_penanggung_jawab (daftar_kegiatan_sebagai_penanggung_jawab)",
+		lp="1821.5,2277.4",
+		pos="s,1630.3,2533.5 1637.1,2528 1816.2,2383.4 2120.1,2143.3 2288.2,2013.6"];
+	apps_kegiatan_lab_models_Kegiatan -> apps_main_models_models_LaboratoriumRiset	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" laboratorium_riset_penyelenggara (daftar_kegiatan)",
+		lp="1822.2,2662.5",
+		pos="s,1630.3,2650.5 1639,2650.7 1802.5,2654.6 2064.4,2660.7 2204.5,2664"];
+	apps_kegiatan_lab_models_PesertaKegiatan	[height=1.6632,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PesertaKegiatan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>bukti_absen</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>kegiatan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>sertifikat</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">is_hadir</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">BooleanField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="795.51,2384.7",
+		width=2.4028];
+	apps_kegiatan_lab_models_PesertaKegiatan -> auth_models_Profile	[arrowhead=none,
+		arrowtail=dot,
+		color="#17becf",
+		dir=both,
+		fontcolor="#17becf",
+		label=" profile (daftar_partisipasi_kegiatan)",
+		lp="1068.9,2098.5",
+		pos="s,855.83,2325.3 861.48,2318.7 867.06,2312 872.41,2305.2 877.25,2298.4 978.07,2156.2 1066.8,1978.8 1126.5,1847.3"];
+	apps_kegiatan_lab_models_PesertaKegiatan -> apps_general_models_models_Berkas	[arrowhead=none,
+		arrowtail=dot,
+		color="#ffbb78",
+		dir=both,
+		fontcolor="#ffbb78",
+		label=" sertifikat (daftar_peserta_kegiatan)",
+		lp="999.96,2082.2",
+		pos="s,866.25,2324.9 872.52,2319.2 880.22,2312 885.8,2306.4 887.34,2303.7 900.16,2281.5 967.03,1917.7 988.76,1798.3"];
+	apps_kegiatan_lab_models_PesertaKegiatan -> apps_general_models_models_Berkas	[arrowhead=none,
+		arrowtail=dot,
+		color="#98df8a",
+		dir=both,
+		fontcolor="#98df8a",
+		label=" bukti_absen (daftar_bukti_absen_kegiatan)",
+		lp="1007.4,2089.6",
+		pos="s,856.11,2325.2 861.77,2318.9 868.84,2310.8 874.47,2303.6 877.25,2298.4 889.19,2275.8 963.52,1916.8 987.87,1798.3"];
+	apps_kegiatan_lab_models_PesertaKegiatan -> apps_kegiatan_lab_models_Kegiatan	[arrowhead=none,
+		arrowtail=dot,
+		color="#aec7e8",
+		dir=both,
+		fontcolor="#aec7e8",
+		label=" kegiatan (daftar_peserta)",
+		lp="1070.4,2511.1",
+		pos="s,881.92,2417.2 890.11,2420.2 1011,2465.6 1220.9,2544.5 1358.8,2596.3"];
+	apps_kegiatan_lab_models_Pertanyaan	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Pertanyaan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>peserta_kegiatan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">pertanyaan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="96.25,2994.8",
+		width=2.6736];
+	apps_kegiatan_lab_models_Pertanyaan -> apps_kegiatan_lab_models_PesertaKegiatan	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff9896",
+		dir=both,
+		fontcolor="#ff9896",
+		label=" peserta_kegiatan (daftar_pertanyaan)",
+		lp="360.08,2708.7",
+		pos="s,139.73,2956.9 146.5,2951 269.63,2843.5 586.56,2567 726.89,2444.6"];
+	apps_kegiatan_lab_models_Evaluasi	[height=1.8646,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Evaluasi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>kegiatan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">catatan_penting</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">deskripsi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">kepuasan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">PositiveIntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">kritik</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">saran_masukan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1451.8,3681.4",
+		width=2.6632];
+	apps_kegiatan_lab_models_Evaluasi -> apps_kegiatan_lab_models_Kegiatan	[arrowhead=none,
+		arrowtail=dot,
+		color="#c5b0d5",
+		dir=both,
+		fontcolor="#c5b0d5",
+		label=" kegiatan (daftar_evaluasi)",
+		lp="1422.1,3253.1",
+		pos="s,1454.6,3614.4 1454.9,3605.5 1461.6,3445.2 1477.1,3068 1486.6,2837.5"];
+	apps_pendaftaran_penelitian_models_PendaftaranPenelitian	[height=2.2674,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PendaftaranPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>laboratorium_riset</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>periode_akademik</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">acuan_pekerjaan_sebelumnya</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">deskripsi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">kategori_penelitian</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">ruang_lingkup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">target_pengerjaan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">topik</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1982.9,2057.1",
+		width=3.2361];
+	apps_pendaftaran_penelitian_models_PendaftaranPenelitian -> apps_general_models_models_PeriodeAkademik	[arrowhead=none,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" periode_akademik (daftar_pendaftaran_penelitian)",
+		lp="1810.2,2429.8",
+		pos="s,1965.2,2138.5 1963.3,2147.3 1930.7,2296.8 1866.5,2591.3 1840.4,2711.1"];
+	apps_pendaftaran_penelitian_models_PendaftaranPenelitian -> apps_general_models_models_ProgramStudi	[arrowhead=dot,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" bidang_ilmu (daftar_pendaftaran_penelitian)",
+		lp="1816.9,2039.5",
+		pos="s,1866.8,2048.5 e,1769.2,2041.2 1858.2,2047.8 1830.8,2045.8 1802.7,2043.7 1778.1,2041.9"];
+	apps_pendaftaran_penelitian_models_PendaftaranPenelitian -> apps_general_models_models_MataKuliah	[arrowhead=dot,
+		arrowtail=dot,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" mata_kuliah_terkait (daftar_pendaftaran_penelitian)",
+		lp="1841.4,1790.2",
+		pos="s,1969.2,1975.6 e,1907.7,1611.4 1967.7,1966.8 1950.3,1864 1922.7,1700.1 1909.2,1620.3"];
+	apps_pendaftaran_penelitian_models_PendaftaranPenelitian -> apps_main_models_models_LaboratoriumRiset	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" laboratorium_riset (daftar_pendaftaran_penelitian)",
+		lp="2227.2,2352.6",
+		pos="s,2025.4,2138.7 2029.4,2146.3 2086,2255 2181.6,2438.4 2242.8,2555.9"];
+	apps_pendaftaran_penelitian_models_LowonganPenelitian	[height=3.0729,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    LowonganPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>dosen_pembuka</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>pendaftaran_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">foto_lowongan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">ImageField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">maksimal_grup_yang_diterima</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">maksimal_jumlah_anggota_dalam_satu_grup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">minimal_jumlah_anggota_dalam_satu_grup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">prasyarat</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">status_lowongan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">waktu_batas_pengumuman</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">waktu_dibuka</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">waktu_ditutup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">DateTimeField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">website_referensi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">URLField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2638.2,1252",
+		width=3.9965];
+	apps_pendaftaran_penelitian_models_LowonganPenelitian -> apps_general_models_models_Fasilitas	[arrowhead=dot,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" fasilitas (daftar_lowongan)",
+		lp="3057.6,1007.9",
+		pos="s,2781.7,1175.5 e,3393.7,849.49 2789.5,1171.4 2968.1,1076.3 3256.9,922.35 3385.8,853.69"];
+	apps_pendaftaran_penelitian_models_LowonganPenelitian -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=dot,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" dosen_pembuka (daftar_lowongan)",
+		lp="2463.4,1578.7",
+		pos="s,2600.5,1362.6 2597.7,1370.8 2558.3,1486.5 2498.4,1662.2 2456.7,1784.4"];
+	apps_pendaftaran_penelitian_models_LowonganPenelitian -> apps_pendaftaran_penelitian_models_PendaftaranPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" pendaftaran_penelitian (daftar_lowongan)",
+		lp="2221.6,1674.2",
+		pos="s,2548.5,1362.3 2542.9,1369.1 2408.4,1534.4 2166,1832.2 2049.3,1975.6"];
+	apps_pendaftaran_penelitian_models_GrupPendaftarLowongan	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    GrupPendaftarLowongan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>lowongan_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">catatan_untuk_meyakinkan_dosen</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">prioritas</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">status_penerimaan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2272.6,455.52",
+		width=3.4549];
+	apps_pendaftaran_penelitian_models_GrupPendaftarLowongan -> apps_pendaftaran_penelitian_models_LowonganPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#7f7f7f",
+		dir=both,
+		fontcolor="#7f7f7f",
+		label=" lowongan_penelitian (daftar_grup_pendaftar)",
+		lp="2467.7,796.87",
+		pos="s,2324.9,507.78 2331,514.09 2424.2,612.31 2603.2,820.93 2670.3,1038.2 2680.5,1071.1 2679.2,1107.9 2673.4,1141.6"];
+	apps_pendaftaran_penelitian_models_DiskusiLowongan	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    DiskusiLowongan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>grup_pendaftar_lowongan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>lowongan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">pesan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2094,976.15",
+		width=3.2361];
+	apps_pendaftaran_penelitian_models_DiskusiLowongan -> auth_models_Profile	[arrowhead=none,
+		arrowtail=dot,
+		color="#17becf",
+		dir=both,
+		fontcolor="#17becf",
+		label=" profile (daftar_diskusi_lowongan)",
+		lp="1618.5,1301.3",
+		pos="s,2025.8,1028.7 2018.9,1034 1862.7,1154.4 1501.9,1432.3 1317.9,1574.1"];
+	apps_pendaftaran_penelitian_models_DiskusiLowongan -> apps_pendaftaran_penelitian_models_LowonganPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#bcbd22",
+		dir=both,
+		fontcolor="#bcbd22",
+		label=" lowongan (daftar_diskusi)",
+		lp="2298.7,1109.1",
+		pos="s,2197.7,1028.7 2205.6,1032.7 2289.1,1075.1 2404,1133.3 2494.4,1179.1"];
+	apps_pendaftaran_penelitian_models_DiskusiLowongan -> apps_pendaftaran_penelitian_models_GrupPendaftarLowongan	[arrowhead=none,
+		arrowtail=dot,
+		color="#aec7e8",
+		dir=both,
+		fontcolor="#aec7e8",
+		label=" grup_pendaftar_lowongan (daftar_pesan_diskusi_lowongan)",
+		lp="2073.1,720.88",
+		pos="s,2111.9,923.84 2114.8,915.4 2150.2,812.3 2221.4,604.83 2254.7,507.79"];
+	apps_pendaftaran_penelitian_models_PendaftarLowongan	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PendaftarLowongan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>grup_pendaftar_lowongan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>mahasiswa</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">is_verified</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">BooleanField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">verification_token</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">UUIDField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1673.3,218.14",
+		width=3.2361];
+	apps_pendaftaran_penelitian_models_PendaftarLowongan -> apps_main_models_models_Mahasiswa	[arrowhead=none,
+		arrowtail=dot,
+		color="#98df8a",
+		dir=both,
+		fontcolor="#98df8a",
+		label=" mahasiswa (daftar_pendaftar_lowongan)",
+		lp="1172.4,436.81",
+		pos="s,1568.6,270.64 1560.8,274.55 1394.6,357.91 1086,512.68 926.98,592.44"];
+	apps_pendaftaran_penelitian_models_PendaftarLowongan -> apps_pendaftaran_penelitian_models_GrupPendaftarLowongan	[arrowhead=none,
+		arrowtail=dot,
+		color="#ffbb78",
+		dir=both,
+		fontcolor="#ffbb78",
+		label=" grup_pendaftar_lowongan (daftar_pendaftar)",
+		lp="1885.5,340.57",
+		pos="s,1789.6,264.19 1797.8,267.46 1900.6,308.17 2045.7,365.65 2148.4,406.33"];
+	apps_pendaftaran_penelitian_models_BobotMataKuliahPadaLowongan	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    BobotMataKuliahPadaLowongan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>lowongan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>mata_kuliah</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">bobot</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">DecimalField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="2555.3,1086",
+		width=3.1285];
+	apps_pendaftaran_penelitian_models_BobotMataKuliahPadaLowongan -> apps_general_models_models_MataKuliah	[arrowhead=none,
+		arrowtail=dot,
+		color="#c5b0d5",
+		dir=both,
+		fontcolor="#c5b0d5",
+		label=" mata_kuliah (daftar_bobot_lowongan)",
+		lp="2153.5,1338.5",
+		pos="s,2494.6,1131.2 2487.7,1136.4 2356.4,1234.3 2069.2,1448.4 1952.3,1535.5"];
+	apps_pendaftaran_penelitian_models_BobotMataKuliahPadaLowongan -> apps_pendaftaran_penelitian_models_LowonganPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff9896",
+		dir=both,
+		fontcolor="#ff9896",
+		label=" lowongan (daftar_bobot_mata_kuliah)",
+		lp="2652,1134",
+		pos="s,2578,1131.4 2581.9,1139.2 2582.2,1139.9 2582.6,1140.7 2583,1141.4"];
+	apps_pendaftaran_penelitian_models_PengajuanPenelitian	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PengajuanPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>pendaftaran_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>proposal</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">rencana_judul</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1556.4,1743.4",
+		width=3.0174];
+	apps_pendaftaran_penelitian_models_PengajuanPenelitian -> apps_general_models_models_Berkas	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" proposal (daftar_pengajuan_penelitian)",
+		lp="1193.8,1867.3",
+		pos="s,1478.6,1788.6 1470.6,1792.8 1427.1,1815 1372.7,1838.6 1320.6,1849.9 1220.5,1871.4 1185.4,1887.7 1090.3,1849.9 1064,1839.4 1040.8,\
+1817.9 1024,1798.5"];
+	apps_pendaftaran_penelitian_models_PengajuanPenelitian -> apps_pendaftaran_penelitian_models_PendaftaranPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" pendaftaran_penelitian (daftar_pengajuan)",
+		lp="1665.1,1886.8",
+		pos="s,1618,1788.6 1625.1,1793.9 1691.8,1842.9 1794.1,1918.2 1872.2,1975.7"];
+	apps_pendaftaran_penelitian_models_GrupPendaftarPengajuan	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    GrupPendaftarPengajuan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>approve_by</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>pengajuan_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">feedback_dosen</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">status_pengajuan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1697.7,1088.8",
+		width=2.934];
+	apps_pendaftaran_penelitian_models_GrupPendaftarPengajuan -> apps_main_models_models_Dosen	[arrowhead=none,
+		arrowtail=dot,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" approve_by (daftar_grup_pendaftar_yang_disetujui)",
+		lp="1906.7,1451.2",
+		pos="s,1742.5,1141.3 1748,1147.8 1860,1279.3 2132.4,1599.1 2290.4,1784.6"];
+	apps_pendaftaran_penelitian_models_GrupPendaftarPengajuan -> apps_pendaftaran_penelitian_models_PengajuanPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" pengajuan_penelitian (daftar_grup_pendaftar)",
+		lp="1541.2,1424.6",
+		pos="s,1686.4,1141.2 1684.5,1149.9 1656.3,1280.4 1591,1583.3 1566.2,1698.1"];
+	apps_pendaftaran_penelitian_models_DiskusiPengajuan	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    DiskusiPengajuan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>grup_pendaftar_pengajuan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">pesan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1304.1,961.81",
+		width=3.2778];
+	apps_pendaftaran_penelitian_models_DiskusiPengajuan -> auth_models_Profile	[arrowhead=none,
+		arrowtail=dot,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" profile (daftar_diskusi_pengajuan)",
+		lp="1204.8,1229",
+		pos="s,1297.7,1007.1 1296.4,1015.9 1282.7,1112.9 1253.4,1320.6 1231.8,1474.2"];
+	apps_pendaftaran_penelitian_models_DiskusiPengajuan -> apps_pendaftaran_penelitian_models_GrupPendaftarPengajuan	[arrowhead=none,
+		arrowtail=dot,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" grup_pendaftar_pengajuan (daftar_pesan_diskusi_pengajuan)",
+		lp="1393.3,1032.6",
+		pos="s,1421.9,999.82 1430.2,1002.5 1482.5,1019.4 1542.4,1038.7 1592.3,1054.8"];
+	apps_pendaftaran_penelitian_models_PendaftarPengajuan	[height=1.4618,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    PendaftarPengajuan
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>grup_pendaftar_pengajuan</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>mahasiswa</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">is_verified</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">BooleanField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">verification_token</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">UUIDField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1479.4,552.02",
+		width=3.2778];
+	apps_pendaftaran_penelitian_models_PendaftarPengajuan -> apps_main_models_models_Mahasiswa	[arrowhead=none,
+		arrowtail=dot,
+		color="#7f7f7f",
+		dir=both,
+		fontcolor="#7f7f7f",
+		label=" mahasiswa (daftar_pendaftaran_pengajuan)",
+		lp="1062.6,603.88",
+		pos="s,1361.6,568.41 1352.7,569.64 1228.5,586.92 1041.5,612.93 927.11,628.84"];
+	apps_pendaftaran_penelitian_models_PendaftarPengajuan -> apps_pendaftaran_penelitian_models_GrupPendaftarPengajuan	[arrowhead=none,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" grup_pendaftar_pengajuan (daftar_pendaftar)",
+		lp="1592.7,797.29",
+		pos="s,1532.5,604.41 1538.5,610.78 1601.7,678.23 1698.1,795.44 1736.9,918.19 1749.7,958.67 1747.1,972.49 1736.9,1013.7 1735.1,1021.3 \
+1732.3,1029 1729.1,1036.3"];
+	apps_penelitian_models_Penelitian	[height=2.8715,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    Penelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>laboratorium_riset</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>pendaftaran_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>periode_akademik</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">acuan_pekerjaan_sebelumnya</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">deskripsi</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">judul</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">kategori_penelitian</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">ruang_lingkup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">target_bab</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">target_pengerjaan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">topik</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="1542.8,2280.7",
+		width=3.2361];
+	apps_penelitian_models_Penelitian -> apps_general_models_models_PeriodeAkademik	[arrowhead=none,
+		arrowtail=dot,
+		color="#bcbd22",
+		dir=both,
+		fontcolor="#bcbd22",
+		label=" periode_akademik (daftar_penelitian)",
+		lp="1769,2552.6",
+		pos="s,1604,2384 1608.4,2391.4 1667.7,2491.7 1752.6,2634.9 1797.8,2711.2"];
+	apps_penelitian_models_Penelitian -> apps_general_models_models_ProgramStudi	[arrowhead=dot,
+		arrowtail=dot,
+		color="#ffbb78",
+		dir=both,
+		fontcolor="#ffbb78",
+		label=" bidang_ilmu (daftar_penelitian)",
+		lp="1589.7,2127.7",
+		pos="s,1610.6,2177.4 e,1683.1,2067.1 1615.5,2169.9 1638,2135.6 1661.3,2100.2 1678.3,2074.4"];
+	apps_penelitian_models_Penelitian -> apps_general_models_models_MataKuliah	[arrowhead=dot,
+		arrowtail=dot,
+		color="#98df8a",
+		dir=both,
+		fontcolor="#98df8a",
+		label=" mata_kuliah_terkait (daftar_penelitian)",
+		lp="1627.2,1875.9",
+		pos="s,1570.6,2177.6 e,1873.4,1611.4 1573.1,2169 1588.8,2117.4 1609.9,2056 1634.6,2003 1704,1854.8 1813.8,1694.6 1868.3,1618.5"];
+	apps_penelitian_models_Penelitian -> apps_main_models_models_LaboratoriumRiset	[arrowhead=none,
+		arrowtail=dot,
+		color="#17becf",
+		dir=both,
+		fontcolor="#17becf",
+		label=" laboratorium_riset (daftar_penelitian)",
+		lp="1863,2483.9",
+		pos="s,1659.1,2339.9 1667,2343.9 1817.7,2420.6 2068.3,2548.2 2204.7,2617.6"];
+	apps_penelitian_models_Penelitian -> apps_pendaftaran_penelitian_models_PendaftaranPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#aec7e8",
+		dir=both,
+		fontcolor="#aec7e8",
+		label=" pendaftaran_penelitian (penelitian)",
+		lp="1697.1,2159.8",
+		pos="s,1659.1,2209.8 1666.9,2205.3 1692.1,2190.8 1718.6,2176.2 1743.9,2163.2 1783.2,2143.1 1827.2,2123 1866.5,2105.7"];
+	apps_penelitian_models_GrupPenelitian	[height=1.059,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    GrupPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama_grup</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="991.46,2893.6",
+		width=2.2986];
+	apps_penelitian_models_GrupPenelitian -> apps_penelitian_models_Penelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff9896",
+		dir=both,
+		fontcolor="#ff9896",
+		label=" penelitian (daftar_grup)",
+		lp="1171.8,2617.9",
+		pos="s,1020.4,2855.5 1025.9,2848.4 1088.5,2767 1226.8,2591.4 1356.1,2454.5 1378.5,2430.9 1403.4,2406.4 1427.5,2383.7"];
+	apps_penelitian_models_MemberGrupPenelitian	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    MemberGrupPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>grup_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">peran</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="780.85,2250.6",
+		width=2.6111];
+	apps_penelitian_models_MemberGrupPenelitian -> auth_models_Profile	[arrowhead=none,
+		arrowtail=dot,
+		color="#1f77b4",
+		dir=both,
+		fontcolor="#1f77b4",
+		label=" profile (daftar_keanggotaan_penelitian)",
+		lp="1043.1,2028.4",
+		pos="s,826.97,2205.5 832.99,2199.4 859.97,2171.8 892.71,2136.5 919.18,2102.6 981.93,2022.3 1044.3,1928.1 1094.8,1847.4"];
+	apps_penelitian_models_MemberGrupPenelitian -> apps_penelitian_models_GrupPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#c5b0d5",
+		dir=both,
+		fontcolor="#c5b0d5",
+		label=" grup_penelitian (daftar_anggota)",
+		lp="913.48,2572.3",
+		pos="s,860.78,2295.9 867.39,2302 873.81,2308.2 879.63,2315 884.41,2322.4 997.01,2496.2 997.86,2758.5 993.78,2855.7"];
+	apps_penelitian_models_BabPenelitian	[height=1.2604,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    BabPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">nama</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">CharField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">urutan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">PositiveIntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="707.15,2758.5",
+		width=2.3819];
+	apps_penelitian_models_BabPenelitian -> apps_penelitian_models_Penelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#ff7f0e",
+		dir=both,
+		fontcolor="#ff7f0e",
+		label=" penelitian (daftar_bab)",
+		lp="1060.6,2537.4",
+		pos="s,786.14,2713.4 793.65,2709.1 944.7,2622.7 1256.6,2444.3 1426.4,2347.2"];
+	apps_penelitian_models_SubmisiBabPenelitian	[height=1.6632,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    SubmisiBabPenelitian
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>bab_penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>berkas</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">feedback_dosen</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">pesan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">status_persetujuan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="255.21,2262.5",
+		width=2.7049];
+	apps_penelitian_models_SubmisiBabPenelitian -> apps_general_models_models_Berkas	[arrowhead=none,
+		arrowtail=dot,
+		color="#d62728",
+		dir=both,
+		fontcolor="#d62728",
+		label=" berkas (daftar_submisi_bab)",
+		lp="589.08,2005.8",
+		pos="s,343.41,2202.7 350.76,2197.7 507.33,2091.5 813.7,1883.8 939.57,1798.5"];
+	apps_penelitian_models_SubmisiBabPenelitian -> apps_penelitian_models_BabPenelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#2ca02c",
+		dir=both,
+		fontcolor="#2ca02c",
+		label=" bab_penelitian (daftar_submisi)",
+		lp="430.14,2523.1",
+		pos="s,309.72,2322.3 315.76,2328.9 409.22,2431.5 586.18,2625.7 666.12,2713.5"];
+	apps_penelitian_models_ForumDiskusi	[height=1.6632,
+		label=<
+    <TABLE BGCOLOR="white" BORDER="1" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="5" ALIGN="CENTER" BGCOLOR="#1b563f">
+    <FONT FACE="Roboto" COLOR="white" POINT-SIZE="10"><B>
+    ForumDiskusi
+    </B></FONT></TD></TR>
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>id</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>BigAutoField</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>balas_ke</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>penelitian</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT COLOR="#7B7B7B" FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto"><B>profile_pengirim</B></FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto"><B>ForeignKey (id)</B></FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">kirim_ke</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">IntegerField</FONT>
+    </TD></TR>
+  
+  
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Roboto">pesan</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Roboto">TextField</FONT>
+    </TD></TR>
+  
+  
+    </TABLE>
+    >,
+		pos="820.91,2040.3",
+		width=2.6632];
+	apps_penelitian_models_ForumDiskusi -> auth_models_Profile	[arrowhead=none,
+		arrowtail=dot,
+		color="#9467bd",
+		dir=both,
+		fontcolor="#9467bd",
+		label=" profile_pengirim (daftar_pesan_forum)",
+		lp="920.11,1887.1",
+		pos="s,885.91,1980.6 892.36,1974.6 943.45,1927.1 1013.5,1861 1073.3,1801 1079.7,1794.5 1086.4,1787.7 1093,1780.9"];
+	apps_penelitian_models_ForumDiskusi -> apps_penelitian_models_Penelitian	[arrowhead=none,
+		arrowtail=dot,
+		color="#8c564b",
+		dir=both,
+		fontcolor="#8c564b",
+		label=" penelitian (daftar_pesan_forum)",
+		lp="1112.8,2162.5",
+		pos="s,916.77,2072.3 924.99,2075 1058.1,2119.3 1287.8,2195.8 1426.5,2242"];
+	apps_penelitian_models_ForumDiskusi -> apps_penelitian_models_ForumDiskusi	[arrowhead=none,
+		arrowtail=dot,
+		color="#e377c2",
+		dir=both,
+		fontcolor="#e377c2",
+		label=" balas_ke (daftar_balasan)",
+		lp="982.78,2040.3",
+		pos="s,916.44,2046.1 925.22,2044.9 931.21,2043.8 934.78,2042.3 934.78,2040.3 934.78,2037.6 927.55,2035.6 916.44,2034.6"];
+}
